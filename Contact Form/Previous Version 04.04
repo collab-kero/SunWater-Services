@@ -1,0 +1,19 @@
+<div class='field-full'>
+  <label><strong>Residential Services</strong></label>
+  <div class='checkbox-field'>
+    [checkbox* residential-services use_label_element 
+      "Wheelie Bin Cleaning" 
+      "Dumpster Washing" 
+      "Driveway/Sidewalk Washing" 
+      "Garage Floor Cleaning"  
+      "Deck or Porch Washing"
+    ] 
+  </div>
+</div>
+
+[group wheelie-bin-group]
+  <div class='field-full'>
+    <p><strong>Want to purchase Wheelie Bin Cleaning?</strong> <br>
+    <a href="https://yourpurchaseurl.com" target="_blank">Click here to purchase</a></p>
+  </div>
+[/group]
