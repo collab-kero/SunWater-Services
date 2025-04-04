@@ -16,17 +16,6 @@
   <div class='field-half'> City * [text* service-city] </div>
   <div class='field-half field-half-right'> 
     State [select* service-address-state default:"North Dakota" 
-      "South Dakota" 
-      "Minnesota" 
-      "Montana" 
-      "Nebraska" 
-      "Wyoming" 
-      "Iowa" 
-      "Wisconsin" 
-      "Colorado" 
-      "Illinois" 
-      "Kansas" 
-      "Missouri"
     ] 
   </div>
 </div>
