@@ -1,7 +1,46 @@
+<div>
+  <div class='field-half'> First name * [text* first-name] </div>
+  <div class='field-half field-half-right'> Last name * [text* last-name] </div>
+</div>
+
+<div>
+  <div class='field-half'> Phone * [tel* phone-number] </div>
+  <div class='field-half field-half-right'> Email * [email* customer-email] </div>
+</div>
+
+<div>
+  <div class='field-full'> Address * [text* address] </div>
+</div>
+
+<div>
+  <div class='field-half'> City * [text* service-city] </div>
+  <div class='field-half field-half-right'> 
+    State [select* service-address-state default:"North Dakota" 
+      
+      "South Dakota" 
+      "Minnesota" 
+      "Montana" 
+      "Nebraska" 
+      "Wyoming" 
+      "Iowa" 
+      "Wisconsin" 
+      "Colorado" 
+      "Illinois" 
+      "Kansas" 
+      "Missouri"
+    ] 
+  </div>
+</div>
+
+
+<div>
+  <div class='field-half'> Zip [number service-zip min:0 max:99999] </div>
+</div>
+
 <div class='field-full'>
   <label><strong>Residential Services</strong></label>
   <div class='checkbox-field'>
-    [checkbox* residential-services use_label_element 
+    [checkbox residential-services use_label_element 
       "Wheelie Bin Cleaning" 
       "Dumpster Washing" 
       "Driveway/Sidewalk Washing" 
@@ -11,9 +50,24 @@
   </div>
 </div>
 
-[group wheelie-bin-group]
-  <div class='field-full'>
-    <p><strong>Want to purchase Wheelie Bin Cleaning?</strong> <br>
-    <a href="https://yourpurchaseurl.com" target="_blank">Click here to purchase</a></p>
+<div class='field-full'>
+  <label><strong>Commercial Services</strong></label>
+  <div class='checkbox-field'>
+    [checkbox commercial-services use_label_element 
+      "Trash/Garbage Bin Cleaning" 
+      "Dumpster Washing" 
+      "Concrete Pad Cleaning" 
+      "Store Front Walkways and Parking" 
+      "Drive-Thru Lanes" 
+      "Gum Removal"
+    ] 
   </div>
-[/group]
+</div>
+
+<div class='field-full'>
+  <label><strong>Don't see the service you want listed? Let us know what you're looking for:</strong></label>
+  [text other-service]
+</div>
+
+
+[submit "Submit"]
